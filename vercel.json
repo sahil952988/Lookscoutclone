@@ -6,7 +6,7 @@
       "use": "@vercel/node"
     }
   ],
-  "rewrite": [
+  "routes": [
     {
       "src": "/(.*)",
       "dest": "/backend"
