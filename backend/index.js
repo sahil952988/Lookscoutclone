@@ -24,8 +24,8 @@ app.use(morgan('dev'));
 app.use('/api/contact', authRoutes);
 
 //rest api
-app.use(express.static('../frontend/build'));
-app.use('*', (_req, res) => res.sendFile('./build/index.html', { root: '../frontend' }));
+app.use(express.static('public'));
+app.use('*', (_req, res) => res.sendFile('./public/index.html', { root: './' }));
 
 //PORT
 const PORT = process.env.PORT || 4000;
