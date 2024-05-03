@@ -1,7 +1,7 @@
 {
   "name": "internproject",
   "scripts": {
-    "start": "node server.js",
+    "start": "npm run start --prefix ./backend",
     "server": "npm run server --prefix ./backend",
     "frontend": "npm start --prefix ./frontend",
     "dev": "concurrently \"npm run server\" \"npm run frontend\""
