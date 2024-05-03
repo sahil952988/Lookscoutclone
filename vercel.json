@@ -1,9 +1,15 @@
 {
   "version": 2,
-  "routes": [
+  "builds": [
+    {
+      "src": "./backend/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "rewrite": [
     {
       "src": "/(.*)",
-      "dest": "/backend/index.js"
+      "dest": "/backend"
     }
   ]
 }
