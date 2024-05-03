@@ -4,10 +4,12 @@
     {
       "src": "/api",
       "dest": "/backend/server.js"
-    },
+    }
+  ],
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/frontend/build/(.*)"
+      "source": "/(.*)",
+      "destination": "/frontend/build"
     }
   ]
 }
